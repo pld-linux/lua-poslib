@@ -30,12 +30,10 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/%{_libdir}/lua
 install poslib.so $RPM_BUILD_ROOT/%{_libdir}/lua
 
-gzip -9nf readme.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc readme.txt.gz *.lua
+%doc readme.txt *.lua
 %attr(755,root,root)		%{_libdir}/lua/*.so
