@@ -5,8 +5,6 @@ Version:	1.4
 Release:	1
 License:	BSD-like
 Group:		Development/Languages
-Group(de):	Entwicklung/Sprachen
-Group(pl):	Programowanie/Jêzyki
 Source:		ftp://ftp.lua.org/poslib.tar.gz
 URL:		http://www.soho-one.com/software/poslib/
 BuildRequires:	lua-devel
