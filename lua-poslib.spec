@@ -13,6 +13,11 @@ BuildRequires:	lua-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+POSIX bindings for Lua language implemented as dynamic library in C.
+
+%description -l pl
+Funkcje ze standardu POSIX dla jêzyka Lua zaimplementowane jako
+dynamiczna biblioteka w C.
 
 %prep
 %setup  -q -n poslib
