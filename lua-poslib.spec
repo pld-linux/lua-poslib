@@ -6,6 +6,7 @@ Release:	2
 License:	BSD-like
 Group:		Development/Languages
 Source0:	ftp://ftp.lua.org/poslib.tar.gz
+# Source0-md5:	645cef2a7714f89702dbd514eb3d36db
 URL:		http://www.soho-one.com/software/poslib/
 BuildRequires:	lua40-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
