@@ -19,17 +19,16 @@ Funkcje ze standardu POSIX dla jêzyka Lua zaimplementowane jako
 dynamiczna biblioteka w C.
 
 %prep
-%setup  -q -n poslib
+%setup -q -n poslib
 
 %build
-
-%{__cc} -o poslib.so $RPM_OPT_FLAGS -shared -fPIC -DPIC lposlib.c
+%{__cc} -o poslib.so %{rpmldflags} %{rpmcflags} -shared -fPIC -DPIC lposlib.c
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_libdir}/lua
 
-install -d $RPM_BUILD_ROOT/%{_libdir}/lua
-install poslib.so $RPM_BUILD_ROOT/%{_libdir}/lua
+install poslib.so $RPM_BUILD_ROOT%{_libdir}/lua
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -37,4 +36,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc readme.txt *.lua
-%attr(755,root,root)		%{_libdir}/lua/*.so
+%attr(755,root,root) %{_libdir}/lua/*.so
