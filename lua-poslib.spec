@@ -2,12 +2,12 @@ Summary:	POSIX functions for Lua
 Summary(pl):	Funkcje POSIX dla Lua
 Name:		lua-poslib
 Version:	1.4
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Development/Languages
 Source0:	ftp://ftp.lua.org/poslib.tar.gz
 URL:		http://www.soho-one.com/software/poslib/
-BuildRequires:	lua-devel
+BuildRequires:	lua40-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
