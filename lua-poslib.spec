@@ -1,5 +1,5 @@
 Summary:	POSIX functions for Lua
-Summary(pl):	Funkcje POSIX dla Lua
+Summary(pl.UTF-8):   Funkcje POSIX dla Lua
 Name:		lua-poslib
 Version:	1.4
 Release:	2
@@ -14,8 +14,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 POSIX bindings for Lua language implemented as dynamic library in C.
 
-%description -l pl
-Funkcje ze standardu POSIX dla jêzyka Lua zaimplementowane jako
+%description -l pl.UTF-8
+Funkcje ze standardu POSIX dla jÄ™zyka Lua zaimplementowane jako
 dynamiczna biblioteka w C.
 
 %prep
