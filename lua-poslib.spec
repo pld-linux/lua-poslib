@@ -1,5 +1,5 @@
 Summary:	POSIX functions for Lua
-Summary(pl.UTF-8):   Funkcje POSIX dla Lua
+Summary(pl.UTF-8):	Funkcje POSIX dla Lua
 Name:		lua-poslib
 Version:	1.4
 Release:	2
